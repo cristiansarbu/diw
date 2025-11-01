@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h4,
+p {
+  margin: 0px;
+}
+
+body {
+  background-color: white;
+}
+
+/* Este es el contenedor General donde fijo la estructura de la rejilla o Grid */
+.container {
+  color: #666666;
+  display: grid;
+  font-family: "Lobster", cursive;
+  margin: 20px auto;
+  width: 95%;
+  /* Utilizo 13 columnas de 1 fracción cada una
+   para luego repartir manualmente las columnas entre los artículos */
+  grid-template-columns: repeat(13, 1fr);
+  /* Creo cuatro filas: dos con 10% para el header y el footer y dos con tamaño auto para 
+  el resto de artículos */
+  grid-template-rows: 10% auto auto 10%;
+}
+
+/* Cabecera de la página */
+header {
+  border-bottom: 1px solid #666666;
+  text-align: center;
+  /* El header ocupa toda la fila, entonces le doy un start 1 y end 14 que es
+  la ultima línea de las 13 columnas */
+  grid-column: 1/14;
+  padding-bottom: 3rem;
+}
+
+/* Menú lateral */
+nav {
+  padding: 1em;
+  grid-column: 1/2;
+  margin-top: 1rem;
+}
+
+nav div {
+  margin-bottom: 20px;
+}
+
+/* Imagen grande */
+main {
+  border: 1px solid #aaaaaa;
+  border-radius: 1em;
+
+  margin-top: 1rem;
+  justify-self: center;
+  padding: 1em;
+  text-align: center;
+  width: 90%;
+  grid-column: 3/10;
+  margin-bottom: 1rem;
+}
+
+main img {
+  border-radius: 1em;
+  height: 225px;
+  width: 80%;
+}
+
+/* Resto de imágenes. Colocadas por grid-auto-flow que por defecto es row */
+article {
+  border: 1px solid #aaaaaa;
+  border-radius: 1em;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+article img {
+  border-radius: 1em;
+  width: 100%;
+  height: 150px;
+}
+
+/* Posiciono el resto de elementos grid de forma manual con grid-column en ambas
+filas */
+article:nth-of-type(1) {
+  grid-column: 10/14;
+  margin-top: 1rem;
+}
+
+article:nth-of-type(2) {
+  grid-column: 2/6;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+article:nth-of-type(3) {
+  grid-column: 6/10;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+article:nth-of-type(4) {
+  grid-column: 10/14;
+  margin-bottom: 1rem;
+}
+
+/* Pie de la página */
+footer {
+  align-items: center;
+  border-top: 1px solid #666666;
+  display: flex;
+
+  justify-content: space-between;
+  padding: 2em;
+  grid-column: 1/14;
+}
+
+footer img {
+  width: 50px;
+}

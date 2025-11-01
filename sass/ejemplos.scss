@@ -1,0 +1,8 @@
+.error {
+  border: 1px #f00;
+
+  &--serious {
+    @extend .error;
+    border-width: 3px;
+  }
+}
