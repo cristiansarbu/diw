@@ -1,0 +1,18 @@
+.icono-cama {
+  width: 40px;
+}
+
+/* media query lg */
+@media (min-width: 992px) {
+  .texto-header-pequeno {
+    font-size: 25px;
+  }
+
+  .texto-subtitulo-pequeno {
+    font-size: 18px;
+  }
+
+  .texto-normal-pequeno {
+    font-size: 17px !important;
+  }
+}

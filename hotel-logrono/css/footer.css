@@ -1,0 +1,10 @@
+/* media query lg */
+@media (min-width: 992px) {
+  .logo-footer-desktop {
+    max-width: 200px;
+  }
+
+  .texto-pequeno {
+    font-size: 25px !important;
+  }
+}

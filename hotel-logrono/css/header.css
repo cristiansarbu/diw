@@ -1,0 +1,7 @@
+/* media query lg */
+@media (min-width: 992px) {
+  .logo-pequeno-desktop {
+    max-width: 300px;
+    height: auto;
+  }
+}

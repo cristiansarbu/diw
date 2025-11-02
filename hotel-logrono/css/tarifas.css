@@ -1,0 +1,6 @@
+/* media query lg */
+@media (min-width: 992px) {
+  .img-especial {
+    max-height: 236px;
+  }
+}
