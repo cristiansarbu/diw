@@ -7,6 +7,13 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# 💡 ADDED THIS BLOCK
+# Sets the permissions the GITHUB_TOKEN needs to deploy to Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 # Allow one concurrent deployment
 concurrency:
   group: "pages"
@@ -26,8 +33,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # This is the important line:
-          # It tells the action to only use the 'hotel-logrono' directory
+          # Tell it to use only your hotel-logrono folder
           path: './hotel-logrono'
       - name: Deploy to GitHub Pages
         id: deployment
