@@ -15,4 +15,16 @@
   .texto-normal-pequeno {
     font-size: 17px !important;
   }
+
+  .bi-textarea-resize {
+    width: 30px;
+  }
+
+  .icono-cama {
+    width: 30px;
+  }
+
+  .bi-check {
+    width: 30px;
+  }
 }

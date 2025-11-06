@@ -21,8 +21,7 @@
                 <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center w-100 w-lg-auto">
 
                     <a class="navbar-brand me-lg-5 p-0 mb-2 mb-lg-0" href="#">
-                        <img class="img-fluid logo-pequeno-desktop" src="../img/header/logo.png"
-                            alt="Logotipo">
+                        <img class="img-fluid logo-pequeno-desktop" src="../img/header/logo.png" alt="Logotipo">
                     </a>
 
                     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
@@ -115,7 +114,7 @@
                     ofrece una ubicación
                     perfectamente conectada tanto con las áreas periféricas como con el centro de la ciudad. Ya sea para
                     estancias de paso, ocio o negocios, Iraipe Logroño te da la bienvenida.</p>
-                <button class="btn btn-primary text-white rounded-5 shadow">Sobre Nosotros</button>
+                <button class="btn btn-secondary text-white rounded-5 shadow">Sobre Nosotros</button>
             </div>
         </div>
     </section>
@@ -123,52 +122,71 @@
     <section>
         <div
             class="container-fluid habitaciones d-flex flex-column justify-content-center align-items-center py-5 px-5">
-            <h4 class="fw-bold text-white fs-1 mb-5">Habitaciones</h4>
-            <p class="text-wrap text-center col-lg-7 text-white fs-4 mb-5">Descubre la amplia oferta de habitaciones con aire
+            <h4 class="fw-bold text-white fs-1 mb-4">Habitaciones</h4>
+            <p class="text-wrap text-center col-lg-7 text-white fs-5 mb-5">Descubre la amplia oferta de
+                habitaciones con
+                aire
                 acondicionado
                 o calefacción (dependiendo de la temporada) disponibles para tu estancia. Reserva ahora y sumérgete
                 en
                 la comodidad y modernidad de
                 nuestro hotel.</p>
-            <button class="btn btn-dark text-white rounded-5 fs-5">Ver Habitaciones</button>
+            <button class="btn btn-dark text-white rounded-5 fs-5 mb-5 px-4">Ver Habitaciones</button>
 
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div id="imageCarousel" class="carousel slide carousel-controles-fuera mx-3 mx-lg-0"
+                data-bs-ride="carousel">
+
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
                 </div>
+
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="../img/landing/carrousel/habitaciones-hotellogrono1.jpg" class="d-block w-100 rounded-5"
-                            alt="...">
+                        <img src="../img/landing/carrousel/habitaciones-hotellogrono1.jpg" class="d-block w-100"
+                            alt="Room with large bed and pool view">
                     </div>
                     <div class="carousel-item">
-                        <img src="../img/landing/carrousel/habitaciones-hotellogrono2.jpg" class="d-block w-100 rounded-5"
-                            alt="...">
+                        <img src="../img/landing/carrousel/habitaciones-hotellogrono2.jpg" class="d-block w-100"
+                            alt="Room with twin beds and balcony">
                     </div>
                     <div class="carousel-item">
-                        <img src="../img/landing/carrousel/habitaciones-hotellogrono3.jpg" class="d-block w-100 rounded-5"
-                            alt="...">
+                        <img src="../img/landing/carrousel/habitaciones-hotellogrono3.jpg" class="d-block w-100"
+                            alt="Room with twin beds and sofa bed">
                     </div>
                     <div class="carousel-item">
-                        <img src="../img/landing/carrousel/habitaciones-hotellogrono4.jpg" class="d-block w-100 rounded-5"
-                            alt="...">
+                        <img src="../img/landing/carrousel/habitaciones-hotellogrono4.jpg" class="d-block w-100"
+                            alt="Room with twin beds and brown sofa">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-arrow-left-circle" viewBox="0 0 16 16" aria-hidden="true">
+                        <path
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                    </svg>
+
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16" aria-hidden="true">
+                        <path
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                    </svg>
+
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
@@ -189,7 +207,7 @@
                     deleitarse con una comida elegante. Este aspecto ha contribuido a que el hotel sea altamente
                     apreciado
                     por nuestros clientes.</p>
-                <button class="btn btn-primary text-white rounded-5 ms-lg-5">Ver Ofertas</button>
+                <button class="btn btn-primary text-white rounded-5 ms-lg-5 px-4">Ver Ofertas</button>
             </div>
         </div>
     </section>
@@ -250,9 +268,9 @@
         <div class="contenedor-estancia-inolvidable container-fluid d-flex flex-column">
             <div class="overlay-oscuro d-flex flex-column align-items-center justify-content-center">
                 <div class="titulos d-flex flex-column align-items-center mb-4">
-                    <h3 class="fw-bold text-primary fs-1 text-center px-5">Una estancia inolvidable en Logroño</h3>
+                    <h3 class="fw-bold text-white fs-1 text-center px-5">Una estancia inolvidable en Logroño</h3>
                 </div>
-                <button type="button" class="btn btn-primary text-white rounded-5"><a href="seleccion-fecha.html"
+                <button type="button" class="btn btn-secondary px-4 text-white rounded-5"><a href="seleccion-fecha.html"
                         class="text-decoration-none text-white">Reserva Ahora</a></button>
             </div>
         </div>
