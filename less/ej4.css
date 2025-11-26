@@ -1,0 +1,18 @@
+.bloque {
+  margin: 10px 5px;
+  padding: 2px;
+}
+p {
+  margin: 10px 5px;
+  padding: 2px;
+  /* Hereda estilos de '.bloque' */
+  border: 1px solid #EEE;
+}
+ul,
+ol {
+  margin: 10px 5px;
+  padding: 2px;
+  /* Hereda estilos de '.bloque' */
+  color: #333;
+  text-transform: uppercase;
+}

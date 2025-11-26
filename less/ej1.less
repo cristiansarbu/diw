@@ -1,0 +1,62 @@
+@blue: #00214D;
+@red: #CF142B;
+@white: #FFF;
+@black: #000;
+@baseFontSize: 15px;
+@baseLineHeight: 22px;
+
+h1 {
+    color: @blue;
+}
+
+p {
+    color: @red;
+    font-size: @baseFontSize;
+}
+
+.border-radius(@radius: 6px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius; 
+}
+
+.sidebar { 
+    .border-radius(4px); 
+}
+
+.sidebar2 { 
+    .border-radius(); 
+}
+
+// Variables
+@textColor: #232323;
+@textHighlight: #00214D;
+@fontFamily: Helvetica, Arial, sans-serif;
+@fontSize: 14px;
+@lineHeight: 21px;
+@introSize: 16px;
+@introLineHeight: 24px;
+@introFontVariant: small-caps; 
+
+// LESS for Paragraph // ------------------
+p { 
+    color: @textColor;
+    font-family: @fontFamily;
+    font-size: @fontSize;
+    line-height: @lineHeight;
+
+.intro { 
+    font-variant: @introFontVariant;
+    font-size: @introSize;
+    line-height: @introLineHeight; 
+}
+
+// End of .intro class
+.highlight { 
+    color: @textHighlight;
+    font-weight: bold; 
+}
+// End of .highlight class }
+// End of paragraph rule
+}
+

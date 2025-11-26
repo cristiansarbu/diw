@@ -1,0 +1,32 @@
+h1 {
+  color: #00214D;
+}
+p {
+  color: #CF142B;
+  font-size: 15px;
+}
+.sidebar {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.sidebar2 {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+p {
+  color: #232323;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+p .intro {
+  font-variant: small-caps;
+  font-size: 16px;
+  line-height: 24px;
+}
+p .highlight {
+  color: #00214D;
+  font-weight: bold;
+}
