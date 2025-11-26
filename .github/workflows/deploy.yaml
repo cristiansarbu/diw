@@ -7,7 +7,6 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# 💡 ADDED THIS BLOCK
 # Sets the permissions the GITHUB_TOKEN needs to deploy to Pages
 permissions:
   contents: read
@@ -33,8 +32,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Tell it to use only your hotel-logrono folder
-          path: './hotel-logrono'
+          # 💡 CAMBIO CRUCIAL: Subimos el contenido de la carpeta 'hotel-logrono'
+          # Esto hace que el contenido se sirva desde la raíz de GitHub Pages.
+          path: './hotel-logrono' 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
