@@ -12475,9 +12475,11 @@ fieldset:disabled .btn {
 }
 
 .contenedor-estancia-inolvidable {
+  background-image: url("../img/landing/estancia-inolvidable.jpg");
+  background-size: cover;
+  background-position: center;
   min-height: 500px;
   position: relative;
-  z-index: -5;
 }
 
 .overlay-oscuro {
